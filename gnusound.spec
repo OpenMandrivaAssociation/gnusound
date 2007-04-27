@@ -1,8 +1,9 @@
 %define name 	gnusound
 %define version 0.7.4
 %define release %mkrel 3
+%define Summary Multitrack sound editor for GNOME
 
-Summary: 	Multitrack sound editor for GNOME
+Summary: 	%{Summary}
 Name: 		%{name}
 Version: 	%{version}
 Release: 	%{release}
@@ -78,7 +79,7 @@ cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
 Encoding=UTF-8
 Name=%{title}
-Comment=%{summary}
+Comment=%{Summary}
 Exec=%{_bindir}/%{name} 
 Icon=%{name}
 Terminal=false
