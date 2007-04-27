@@ -78,7 +78,7 @@ mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
 Encoding=UTF-8
-Name=%{title}
+Name=GNUsound
 Comment=%{Summary}
 Exec=%{_bindir}/%{name} 
 Icon=%{name}
