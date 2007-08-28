@@ -77,7 +77,6 @@ convert -size 16x16 gui/logo.xpm $RPM_BUILD_ROOT/%_miconsdir/%name.png
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
-Encoding=UTF-8
 Name=GNUsound
 Comment=%{Summary}
 Exec=%{_bindir}/%{name} 
