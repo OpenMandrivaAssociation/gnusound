@@ -15,7 +15,6 @@ Patch3:		gnusound-autoconf.patch
 License: 	GPL
 Group: 		Sound
 Url: 		http://www.gnu.org/software/gnusound/index.orig.html
-BuildRoot: 	%{_tmppath}/%{name}-buildroot
 BuildRequires: 	libglade2.0-devel
 BuildRequires: 	libgnomeui2-devel
 BuildRequires:	libalsa-devel libsamplerate-devel
