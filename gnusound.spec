@@ -1,6 +1,6 @@
 %define name 	gnusound
-%define version 0.7.4
-%define release %mkrel 6
+%define version 0.7.5
+%define release %mkrel 1
 %define Summary Multitrack sound editor for GNOME
 
 Summary: 	%{Summary}
@@ -9,7 +9,6 @@ Version: 	%{version}
 Release: 	%{release}
 Source0: 	ftp://ftp.gnu.org/gnu/gnusound/%{name}-%{version}.tar.bz2
 Patch0:     	%{name}-destdir.patch
-Patch1:     gnusound-ffmpeg-struct.patch
 Patch2:     gnusound-non-x86.patch
 Patch3:		gnusound-autoconf.patch
 Patch4: 	gnusound-ffmpeg-new-location.patch
@@ -38,7 +37,6 @@ A gnu sound editor
 %prep
 %setup -q 
 %patch0 -p1
-%patch1 -p0 -b .ffmpeg-struct
 %patch2 -p0 -b .non-x86
 %patch3 -p0 -b .autoconf
 %patch4 -p0
