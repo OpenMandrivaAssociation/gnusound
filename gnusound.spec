@@ -24,7 +24,7 @@ BuildRequires:	libaudiofile-devel libsndfile-devel
 BuildRequires:	libflac-devel jackit-devel
 BuildRequires:	libogg-devel libvorbis-devel
 BuildRequires:	ffmpeg-devel
-BuildRequires:	ImageMagick
+BuildRequires:	imagemagick
 
 # This software sucks
 # I add this for now to make it works
