@@ -13,6 +13,7 @@ Patch2:     gnusound-non-x86.patch
 Patch3:		gnusound-autoconf.patch
 Patch4: 	gnusound-ffmpeg-new-location.patch
 Patch5:		gnusound-0.7.4-gtk212.patch
+Patch6:		gnusound-0.7.5-str-fmt.patch
 License: 	GPL
 Group: 		Sound
 Url: 		http://www.gnu.org/software/gnusound/index.orig.html
@@ -41,6 +42,8 @@ A gnu sound editor
 %patch3 -p0 -b .autoconf
 %patch4 -p0
 %patch5 -p1
+%patch6 -p0
+
 %build
 
 aclocal -I config
@@ -86,7 +89,7 @@ Icon=%{name}
 Terminal=false
 Type=Application
 StartupNotify=true
-Categories=GNOME;GTK;Audio;X-MandrivaLinux-Multimedia-Audio;
+Categories=GNOME;GTK;Audio;AudioVideo;
 EOF
 
 %clean
