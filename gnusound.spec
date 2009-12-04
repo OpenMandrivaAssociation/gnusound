@@ -16,7 +16,7 @@ Patch5:		gnusound-0.7.4-gtk212.patch
 Patch6:		gnusound-0.7.5-str-fmt.patch
 License: 	GPL
 Group: 		Sound
-Url: 		http://www.gnu.org/software/gnusound/index.orig.html
+Url: 		http://www.gnu.org/software/gnusound/
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
 BuildRequires: 	libglade2.0-devel
 BuildRequires: 	libgnomeui2-devel
