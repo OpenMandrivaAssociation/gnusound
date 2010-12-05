@@ -1,6 +1,6 @@
 %define name 	gnusound
 %define version 0.7.5
-%define release %mkrel 3
+%define release %mkrel 4
 %define Summary Multitrack sound editor for GNOME
 
 Summary: 	%{Summary}
