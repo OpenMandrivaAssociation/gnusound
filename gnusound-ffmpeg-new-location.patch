@@ -1,0 +1,24 @@
+--- configure.ac.orig	2009-12-04 02:10:39.000000000 +0100
++++ configure.ac	2009-12-04 02:11:31.000000000 +0100
+@@ -180,7 +180,7 @@
+    use="$use -lgsm"], [], [])
+ 
+ dnl FFMPEG
+-AC_CHECK_HEADER([ffmpeg/avformat.h],
++AC_CHECK_HEADER([libavformat/avformat.h],
+   [AC_CHECK_LIB([avformat], [av_open_input_file],
+     [AC_DEFINE(HAVE_FFMPEG)
+      echo "-lavformat -lavcodec -lavutil -lm $use" > ${module_path}/.file_ffmpeg.cflags
+--- modules/file_ffmpeg.c~	2009-12-04 02:12:47.000000000 +0100
++++ modules/file_ffmpeg.c	2009-12-04 02:12:21.000000000 +0100
+@@ -37,8 +37,8 @@
+ #warning "Not building ffmpeg support."
+ #else
+ 
+-#include <ffmpeg/avformat.h>
+-#include <ffmpeg/avcodec.h>
++#include <libavformat/avformat.h>
++#include <libavcodec/avcodec.h>
+ 
+ struct ffmpeg_data {
+     AVFormatContext *format_context;

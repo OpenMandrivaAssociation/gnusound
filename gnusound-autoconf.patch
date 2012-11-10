@@ -1,0 +1,10 @@
+--- configure.ac.orig	2007-01-08 01:29:59.000000000 +0100
++++ configure.ac	2007-01-08 01:30:17.000000000 +0100
+@@ -265,7 +265,6 @@
+     if test "x$GNOME_CONFIG" = "xno"; then
+        AC_MSG_ERROR([*** cannot find gnome-config, set GNOME_CONFIG environment variable to path of gnome-config script ***])
+     fi
+-    AM_PATH_GTK(1.2.0,,AC_MSG_ERROR([*** GTK+ >= 1.2.0 not installed - please install first ***]))
+     CFLAGS="$CFLAGS `$GNOME_CONFIG --cflags gnomeui libglade` `$GTK_CONFIG --cflags gtk gthread`"
+     LIBS="$LIBS `$GNOME_CONFIG --libs gnomeui libglade` `$GTK_CONFIG --libs gtk gthread`"
+ fi
