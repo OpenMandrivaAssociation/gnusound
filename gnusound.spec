@@ -18,6 +18,11 @@ License: 	GPL
 Group: 		Sound
 Url: 		https://www.gnu.org/software/gnusound/
 BuildRoot: 	%{_tmppath}/%{name}-buildroot
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: 	libglade2.0-devel
 BuildRequires: 	libgnomeui2-devel
 BuildRequires:	libalsa-devel libsamplerate-devel
